@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="background">
+          <div class="image">
+            <div class="pet">
+              <img class="sex" src="/icons/petsLogo.svg" alt="petsLogo" />
+            </div>
+          </div>
+        </div>
+        <div class="information">
+          <div class="name">
+            <h1>Layla</h1>
+          </div>
+          <div class="information-text">
+            <span>Hündin von</span>
+            <span class="bold">Alina Rosenbaum</span>
+          </div>
+          <div class="information-icons">
+            <!-- whatsApp icon -->
+            <div class="icon">
+              <a href="">
+                <img src="/icons/whatsapp.svg" alt="whatsapp" width="56" height="56" />
+              </a>
+            </div>
+
+            <!-- location icon -->
+
+            <div class="icon">
+              <a href="">
+                <img src="/icons/location.svg" alt="location" width="56" height="56" />
+              </a>
+            </div>
+
+            <!-- message icon -->
+
+            <div class="icon">
+              <a href="">
+                <img src="/icons/messageBox.svg" alt="messageBox" width="56" height="56" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="Cards">
+          <!-- first card -->
+          <div class="positioned">
+            <div class="firstCard">
+              <h3 class="cardHeading">Mein Besitzer</h3>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="positioned">
+            <div class="firstCard secCard">
+              <div class="cardHeading secCardHeading">
+                <div class="headingButton">
+                  <button class="button" onclick="slide()">Card Testing</button>
+                </div>
+              </div>
+              <div class="lists">
+                <div class="hide" id="hide">
+                  <!-- I items -->
+                  <div class="items">
+                    <span class="list">Rasse</span>
+                    <span class="answer">Border Collie</span>
+                  </div>
+                  <!-- II items -->
+                  <div class="items">
+                    <span class="list">Farbe</span>
+                    <span class="answer">schwarz/weiß</span>
+                  </div>
+                  <!-- III items -->
+                  <div class="items">
+                    <span class="list">Geburtstag</span>
+                    <span class="answer">16.06.2020</span>
+                  </div>
+                  <!-- IV items -->
+                  <div class="items">
+                    <span class="list">Impfung</span>
+                    <span class="answer">ja</span>
+                  </div>
+                  <!-- V items -->
+                  <div class="items">
+                    <span class="list">Kastration</span>
+                    <span class="answer">ja</span>
+                  </div>
+                  <!-- VI items -->
+                  <div class="items">
+                    <span class="list">Gewicht</span>
+                    <span class="answer">14kg</span>
+                  </div>
+                  <!-- VII items -->
+                  <div class="items">
+                    <span class="list">Größe</span>
+                    <span class="answer">49cm</span>
+                  </div>
+
+                  <!-- VIII items-->
+                  <div class="items">
+                    <span class="list">Trainiert</span>
+                    <span class="answer">ja</span>
+                  </div>
+                  <!-- IX items -->
+                  <div class="items">
+                    <span class="list">Streicheln</span>
+                    <span class="answer">immer gerne</span>
+                  </div>
+                  <!-- X items -->
+                  <div class="items">
+                    <span class="list">Füttern</span>
+                    <span class="answer">nur Trockenfutter</span>
+                  </div>
+                </div>
+              </div>
+              <div class="positioned">
+                <div class="firstCard thirdCard" id="thirdCard">
+                  <h3 class="cardHeading">Mein Besitzer</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const elem = document.getElementById("hide");
+      const thirdCard = document.getElementById("thirdCard");
+
+      function slide() {
+        const toggle = elem.classList.toggle("box");
+
+        if (toggle) {
+          thirdCard.style.marginTop = "420px";
+        } else {
+          thirdCard.style.marginTop = "0";
+        }
+      }
+    </script>
+  </body>
+</html>

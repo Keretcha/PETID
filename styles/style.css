@@ -1,0 +1,177 @@
+:root {
+  --mainbackground: #ffff;
+  --maincolor: #000;
+  --firstcardbackground: #ff7bac;
+  --seccolor: #ffff;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.background {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--mainbackground);
+  background-image: url(/images/background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.pet {
+  background-image: url(/images/Pets.svg);
+  z-index: 1;
+  width: 188px;
+  height: 188px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 150px;
+}
+
+.sex {
+  position: relative;
+  top: 120px;
+  left: 50%;
+}
+
+.information {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 16px;
+  padding: 0 51px;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.information-text {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 4px;
+  font-size: 15px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.information-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0 35px 0;
+}
+.icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--maincolor);
+  display: flex;
+  justify-content: center;
+}
+
+.Cards {
+  position: relative;
+  width: 100%;
+}
+
+.positioned {
+  position: absolute;
+  width: 100%;
+  max-width: 768px;
+}
+
+.firstCard {
+  height: 100px;
+  border-radius: 36px 36px 0 0;
+  background-color: var(--firstcardbackground);
+  position: absolute;
+  width: 100%;
+  padding-top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardHeading {
+  color: var(--mainbackground);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.secCard {
+  height: 70px;
+  background-color: var(--mainbackground);
+  color: var(--maincolor);
+  top: 70px;
+  width: 100%;
+  max-width: 768px;
+  gap: 44px;
+}
+
+.button {
+  border: none;
+  background: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.lists {
+  width: 100%;
+  height: 350px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.hide {
+  overflow: hidden;
+  height: 50px;
+  max-width: 309px;
+  width: 100%;
+  transition: all 0.7s ease-in-out;
+}
+
+.box {
+  max-width: 309px;
+  width: 100%;
+  overflow: visible;
+  height: 250px;
+  transition: all 0.7s ease-in-out;
+}
+
+.items {
+  width: 100%;
+  max-width: 400px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--maincolor);
+  padding-bottom: 20px;
+}
+
+.list {
+  font-weight: bold;
+}
+
+.thirdCard {
+  top: 50px;
+  background-color: var(--maincolor);
+  height: 180px;
+  transition: margin-bottom 0.3s ease;
+}
